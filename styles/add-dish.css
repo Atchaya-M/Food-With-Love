@@ -1,0 +1,110 @@
+
+html {
+	font-size:62.5%;
+  font-family: Finger Paint, 'Source Sans Pro';
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+} 
+input {
+	border: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+  align-items: center ;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/iphone-14-pro-max-3-bg.png');
+}
+.iphone-14-pro-max-3-Ap1 {
+  box-sizing: border-box;
+  padding: 5rem 4.5rem 17.05rem 4.5rem;
+  width: 100%;
+  overflow: hidden;
+  
+}
+.iphone-14-pro-max-3-Ap1 button{
+  width: 3.2rem;
+  align-items:flex-start ;
+}
+
+.iphone-14-pro-max-3-Ap1 .add-flavour-add-dish-1Jq {
+  margin: 0rem 0.7rem 7.1rem 0rem;
+  max-width: 21.1rem;
+  display: flex;
+  padding-left: 45%;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.40625;
+  color: #f3f708;
+  font-family: Finger Paint, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.iphone-14-pro-max-3-Ap1 .auto-group-qjgu-Vzh {
+  margin: 0rem 48.3rem 1.2rem 0rem;
+  box-sizing: border-box;
+  padding: 0.7rem 0rem 0.7rem 48.2rem;
+  width: 84.1rem;
+  height: 6.5rem;
+  flex-shrink: 0;
+}
+.inp-fields{
+  padding-left: 20% ;
+  font-family: Finger Paint, 'Source Sans Pro';
+}
+.inp-fields input{
+  margin: 10px;
+  font-family: Finger Paint, 'Source Sans Pro';
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 300px;
+  background-color: #524d4d;
+  color: aliceblue;
+  font-size: 1.5em;
+}
+
+.iphone-14-pro-max-3-Ap1 .auto-group-cced-DdB {
+  margin: 0rem 47.6rem 0rem 51.5rem;
+  width: calc(100% - 99.1rem);
+  height: 5.1rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+
+.submission-buttons{
+  display: flex;
+  margin: 10px;
+}
+
+.submission-buttons button{
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+  font-size: 3rem;
+  border-radius: 10px;
+  font-family: Finger Paint, 'Source Sans Pro';
+  border: none;
+}
+
+.discard-button button{
+  background-color: rgb(241, 83, 83);
+}
+.add-dish-button button{
+  background-color: #f3f708;
+}
+
+button:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,544 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.survey-page-w69 {
+  box-sizing: border-box;
+  padding: 5rem 55.1rem 5rem 4.5rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/survey-page-bg.png');
+  border-radius: 6rem;
+}
+.survey-page-w69 .auto-group-punh-dzZ {
+  margin-right: 1.1rem;
+  width: 33rem;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .arrow-left-may {
+  margin-bottom: 11.65rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM {
+  margin: 0rem 0rem 0.85rem 3.1rem;
+  width: 29.9rem;
+  height: 22.35rem;
+  position: relative;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-6-1ER {
+  box-sizing: border-box;
+  padding-left: 1.9rem;
+  width: 8.9rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 1.4rem;
+  top: 14.05rem;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.25;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 {
+  width: 29.3rem;
+  height: 21.85rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj {
+  margin-bottom: 1.6rem;
+  width: 23.1rem;
+  height: 16.85rem;
+  position: relative;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .cuisine-preference-Ydf {
+  width: 23.1rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.875;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-2-Sj3 {
+  width: 15rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 1.2rem;
+  top: 3.65rem;
+  display: flex;
+  align-items: center;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-2-Sj3 .rectangle-5-Nch {
+  margin-right: 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-2-Sj3 .north-indian-iAm {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.25;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-3-T8M {
+  width: 15.4rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 1.2rem;
+  top: 6.25rem;
+  display: flex;
+  align-items: center;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-3-T8M .rectangle-5-Ba9 {
+  margin-right: 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-3-T8M .south-indian-7ih {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.25;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-4-eyX {
+  width: 10rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 1.2rem;
+  top: 8.85rem;
+  display: flex;
+  align-items: center;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-4-eyX .rectangle-5-bds {
+  margin-right: 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-4-eyX .chinese-YZ7 {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.25;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-5-tss {
+  width: 9rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 1.2rem;
+  top: 11.45rem;
+  display: flex;
+  align-items: flex-end;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-5-tss .auto-group-us3s-daZ {
+  margin-right: 1rem;
+  width: 1.1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-5-tss .auto-group-us3s-daZ .rectangle-5-y8d {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 1.1rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-5-tss .auto-group-us3s-daZ .rectangle-6-v3s {
+  width: 100%;
+  height: 1.1rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-5-tss .italian-ry7 {
+  margin-bottom: 0.9rem;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.25;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .rectangle-6-BkV {
+  margin-left: 3.7rem;
+  width: 25.6rem;
+  height: 3.4rem;
+  background-color: #524e4e;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .please-specify-vi5 {
+  width: 12.5rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 4.7rem;
+  top: 17.85rem;
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8125;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 {
+  margin: 0rem 6.5rem 0.05rem 3.3rem;
+  width: calc(100% - 9.8rem);
+  height: 23.75rem;
+  position: relative;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .dietary-preference-YUZ {
+  width: 23.2rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.875;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-2-T5j {
+  width: 13.4rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 1.2rem;
+  top: 3.65rem;
+  display: flex;
+  align-items: center;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-2-T5j .rectangle-5-PEH {
+  margin-right: 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-2-T5j .vegetarian-XLV {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.25;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-3-sQM {
+  width: 8.4rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 1.2rem;
+  top: 6.25rem;
+  display: flex;
+  align-items: center;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-3-sQM .rectangle-5-ccq {
+  margin-right: 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-3-sQM .vegan-Zny {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.25;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-4-urq {
+  width: 14rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 1.2rem;
+  top: 8.85rem;
+  display: flex;
+  align-items: center;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-4-urq .rectangle-5-TNZ {
+  margin-right: 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-4-urq .gluten-free-ohK {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.25;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-5-ZAh {
+  width: 12.7rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 1.2rem;
+  top: 11.45rem;
+  display: flex;
+  align-items: center;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-5-ZAh .rectangle-5-hXo {
+  margin-right: 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-5-ZAh .dairy-free-FJR {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.25;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-9-o53 {
+  width: 8rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 1.2rem;
+  top: 16.65rem;
+  display: flex;
+  align-items: center;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-9-o53 .rectangle-5-wS9 {
+  margin-right: 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-9-o53 .paleo-guX {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.25;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-8-qnR {
+  width: 6.8rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 1.2rem;
+  top: 14.05rem;
+  display: flex;
+  align-items: center;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-8-qnR .rectangle-5-B5b {
+  margin-right: 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-8-qnR .keto-WtZ {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.25;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-6-4fB {
+  width: 7.2rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 1.2rem;
+  top: 19.25rem;
+  display: flex;
+  align-items: center;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-6-4fB .rectangle-5-D2H {
+  margin-right: 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .group-12-2m7 .group-6-4fB .none-xVf {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.25;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-tbff-JZX {
+  margin: 0rem 0rem 0.85rem 3.2rem;
+  width: 29.3rem;
+  height: 8.85rem;
+  position: relative;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-tbff-JZX .group-40-ECH {
+  width: 29.3rem;
+  height: 8.35rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-tbff-JZX .group-40-ECH .comfort-food-aX3 {
+  margin-bottom: 0.45rem;
+  display: flex;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.875;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-tbff-JZX .group-40-ECH .rectangle-6-KUd {
+  margin-left: 3.7rem;
+  width: 25.6rem;
+  height: 3.4rem;
+  background-color: #524e4e;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-tbff-JZX .please-specify-fHb {
+  width: 12.5rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 4.6rem;
+  top: 4.35rem;
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8125;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-oi9o-x1o {
+  margin-left: 3.3rem;
+  width: 29.2rem;
+  height: 8.85rem;
+  position: relative;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-oi9o-x1o .group-41-giV {
+  width: 29.2rem;
+  height: 8.35rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-oi9o-x1o .group-41-giV .foods-you-avoid-pph {
+  margin-bottom: 0.45rem;
+  display: flex;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.875;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-oi9o-x1o .group-41-giV .rectangle-6-ANm {
+  margin-left: 3.6rem;
+  width: 25.6rem;
+  height: 3.4rem;
+  background-color: #524e4e;
+}
+.survey-page-w69 .auto-group-punh-dzZ .auto-group-oi9o-x1o .please-specify-WSd {
+  width: 12.5rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 4.5rem;
+  top: 4.35rem;
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8125;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.survey-page-w69 .arrow-left-DM3 {
+  margin-right: 13.3rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-kkbx-A1P {
+  margin-top: 3.8rem;
+  box-sizing: border-box;
+  padding: 0.85rem 5.75rem;
+  height: 77.3rem;
+  flex-shrink: 0;
+}
+.survey-page-w69 .auto-group-kkbx-A1P .your-culinary-wishlist-69w {
+  max-width: 22.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.40625;
+  color: #aaad1c;
+  font-family: Finger Paint, 'Source Sans Pro';
+}

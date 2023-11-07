@@ -1,0 +1,119 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.iphone-14-pro-max-2-2Tb {
+  box-sizing: border-box;
+  padding: 5rem 4.5rem 31.1rem 4.5rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/iphone-14-pro-max-2-bg.png');
+}
+.iphone-14-pro-max-2-2Tb .arrow-left-jcu {
+  margin: 0rem 131.8rem 9.1rem 0rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.iphone-14-pro-max-2-2Tb .revamp-your-menu-4QH {
+  margin: 0rem 0.1rem 8.2rem 0rem;
+  max-width: 22.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.40625;
+  color: #aaad1c;
+  font-family: Finger Paint, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.iphone-14-pro-max-2-2Tb .frame-16-kH7 {
+  margin: 0rem 50.8rem 3.6rem 50.8rem;
+  width: calc(100% - 101.6rem);
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.875;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: #524e4e;
+  border-radius: 2.5rem;
+  flex-shrink: 0;
+}
+.iphone-14-pro-max-2-2Tb .frame-17-DAh {
+  margin: 0rem 50.8rem 3.6rem 50.8rem;
+  width: calc(100% - 101.6rem);
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.875;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: #524e4e;
+  border-radius: 2.5rem;
+  flex-shrink: 0;
+}
+.iphone-14-pro-max-2-2Tb .frame-18-h5s {
+  margin: 0rem 50.8rem 3.6rem 50.8rem;
+  width: calc(100% - 101.6rem);
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.875;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: #524e4e;
+  border-radius: 2.5rem;
+  flex-shrink: 0;
+}
+.iphone-14-pro-max-2-2Tb .frame-19-BWq {
+  margin: 0 50.8rem;
+  width: calc(100% - 101.6rem);
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.875;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: #524e4e;
+  border-radius: 2.5rem;
+  flex-shrink: 0;
+}

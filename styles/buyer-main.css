@@ -1,0 +1,93 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: auto;
+  /* position: relative; */
+  align-items: center ;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('https://images.unsplash.com/photo-1515821937231-c43ad7ed05fc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.iphone-14-pro-max-9-JPB {
+  box-sizing: border-box;
+  padding: 5rem 4.5rem 17.05rem 4.5rem;
+  width: 100%;
+ 
+  
+}
+.iphone-14-pro-max-9-JPB .arrow-left-RCu {
+  margin: 0rem 131.8rem 2.5rem 0rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.iphone-14-pro-max-9-JPB .your-next-culinary-move-jzH {
+  margin-bottom: 15.7rem;
+  max-width: 30.5rem;
+  display: flex;
+  padding-left: 40%;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.40625;
+  color: #aaad1c;
+  font-family: Finger Paint, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.iphone-14-pro-max-9-JPB .frame-12-qnR {
+  margin: 0rem 52.6rem 8rem 52.7rem;
+  width: calc(100% - 105.3rem);
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.875;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: #cd6464;
+  border-radius: 2.5rem;
+  flex-shrink: 0;
+}
+.iphone-14-pro-max-9-JPB .frame-13-7V3 {
+  margin: 0rem 52.6rem 0rem 52.7rem;
+  width: calc(100% - 105.3rem);
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.875;
+  color: #ffffff;
+  font-family: Finger Paint, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: #cd6464;
+  border-radius: 2.5rem;
+  flex-shrink: 0;
+}
+.iphone-14-pro-max-9-JPB .iphone-14-pro-max-9-JPB-bg {
+  width: 144rem;
+  height: 102.4rem;
+  position: relative;
+  background-image: url('REPLACE_IMAGE:4e207818363fee188b840637afb0d9332b4b3f71');
+}
