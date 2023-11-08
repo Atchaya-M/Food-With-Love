@@ -13,17 +13,22 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
-}.iphone-14-pro-max-10-VnR {
   width: 100%;
-  height: 102.4rem;
-  position: relative;
-  overflow: hidden;
-  background-size: 100% 100%;
+  height: 100%;
+  align-items: center ;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../assets/iphone-14-pro-max-10-bg.png');
-  border-radius: 6rem;
+  background-image: url('../assets/iphone-14-pro-max-3-bg.png');
+}
+.iphone-14-pro-max-10-VnR {
+  box-sizing: border-box;
+  padding: 5rem 4.5rem 17.05rem 4.5rem;
+  width: 100%;
+  overflow: hidden;
+
 }
 .iphone-14-pro-max-10-VnR .relish-rate-and-review-SSm {
   width: 29.1rem;
@@ -37,7 +42,7 @@ body {
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.40625;
-  color: #aaad1c;
+  color: #dde02a;
   font-family: Finger Paint, 'Source Sans Pro';
 }
 .iphone-14-pro-max-10-VnR .frame-45-Xj7 {
@@ -271,30 +276,18 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.iphone-14-pro-max-10-VnR .frame-14-eKB {
-  width: 29.7rem;
-  height: 5.5rem;
-  position: absolute;
-  left: 57.1rem;
-  top: 81.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 1.875;
-  color: #ffffff;
+.iphone-14-pro-max-10-VnR .frame-14-eKB{
+  padding-left: 37%;
+  padding-top: 60%;
+}
+.iphone-14-pro-max-10-VnR .frame-14-eKB button{
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+  font-size: 3rem;
+  border-radius: 10px;
   font-family: Finger Paint, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: #cd6464;
-  border-radius: 2.5rem;
-}
-.iphone-14-pro-max-10-VnR .arrow-left-KRK {
-  width: 3.2rem;
-  height: 3.2rem;
-  position: absolute;
-  left: 4.5rem;
-  top: 5rem;
-  object-fit: contain;
-  vertical-align: top;
-}
+  border: none;
+  background-color: rgb(241, 83, 83);
+
+} 
