@@ -13,20 +13,21 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
-}.sign-up-page-Y8H {
-  box-sizing: border-box;
-  padding: 5rem 4.5rem 26.6rem 4.5rem;
   width: 100%;
-  overflow: hidden;
-  position: relative;
-  align-items: center;
+  height: 100%;
+  align-items: center ;
   display: flex;
   flex-direction: column;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background: fixed;
   background-image: url('../assets/sign-up-page-bg.png');
+}.sign-up-page-Y8H {
+  box-sizing: border-box;
+  padding: 5rem 4.5rem 17.05rem 4.5rem;
+  width: 100%;
+  overflow: hidden;
 }
 .sign-up-page-Y8H .arrow-left-eSD {
   margin: 0rem 131.8rem 5.4rem 0rem;
