@@ -13,29 +13,20 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
-}.iphone-14-pro-max-5-RiR {
-  box-sizing: border-box;
-  padding: 5rem 4.5rem 36.8rem 4.5rem;
   width: 100%;
-  overflow: hidden;
-  position: relative;
-  align-items: center;
+  height: 100%;
+  align-items: center ;
   display: flex;
   flex-direction: column;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url('../assets/iphone-14-pro-max-5-bg.png');
-  border-radius: 6rem;
-}
-.iphone-14-pro-max-5-RiR .arrow-left-ixR {
-  margin: 0rem 131.8rem 5.4rem 0rem;
-  width: 3.2rem;
-  height: 3.2rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
+}.iphone-14-pro-max-5-RiR {
+  box-sizing: border-box;
+  padding: 5rem 4.5rem 17.05rem 4.5rem;
+  width: 100%;
+  overflow: hidden;
 }
 .iphone-14-pro-max-5-RiR .simplify-remove-refresh-3Uu {
   margin: 0rem 0rem 1.8rem 1.9rem;
@@ -46,6 +37,7 @@ body {
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.40625;
+  padding-left: 35%;
   color: #aaad1c;
   font-family: Finger Paint, 'Source Sans Pro';
   flex-shrink: 0;
@@ -106,32 +98,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.iphone-14-pro-max-5-RiR .auto-group-gnrm-KBX .auto-group-olmo-Ypy .group-35-65o .auto-group-uag9-cK3 .auto-group-s8sm-Kcm {
-  width: 100%;
-  height: 8.0763rem;
-}
-.iphone-14-pro-max-5-RiR .auto-group-gnrm-KBX .auto-group-olmo-Ypy .group-35-65o .auto-group-tapt-Gnu {
-  margin: 4.865rem 21.007rem 0rem 0rem;
-  box-sizing: border-box;
-  padding-top: 6.2735rem;
-  width: 13.9066rem;
-  height: 14.3141rem;
-  flex-shrink: 0;
-}
-.iphone-14-pro-max-5-RiR .auto-group-gnrm-KBX .auto-group-olmo-Ypy .group-35-65o .auto-group-tapt-Gnu .auto-group-nwy7-b4V {
-  width: 100%;
-  height: 100%;
-}
-.iphone-14-pro-max-5-RiR .auto-group-gnrm-KBX .auto-group-olmo-Ypy .group-35-65o .category-YkR {
-  display: flex;
-  font-size: 2.2rem;
-  font-weight: 400;
-  line-height: 2.0454545455;
-  color: #ffffff;
-  font-family: Finger Paint, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
+
 .iphone-14-pro-max-5-RiR .auto-group-gnrm-KBX .auto-group-olmo-Ypy .group-36-6G9 {
   width: 61.5rem;
   height: 19.2144rem;
@@ -169,32 +136,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.iphone-14-pro-max-5-RiR .auto-group-gnrm-KBX .auto-group-olmo-Ypy .group-36-6G9 .auto-group-8y2d-d1B .auto-group-ct6v-N7B {
-  width: 14.951rem;
-  height: 8.0763rem;
-}
-.iphone-14-pro-max-5-RiR .auto-group-gnrm-KBX .auto-group-olmo-Ypy .group-36-6G9 .auto-group-5xqm-7Kf {
-  margin: 4.865rem 14.313rem 0rem 0rem;
-  box-sizing: border-box;
-  padding-top: 6.2735rem;
-  width: 14.9867rem;
-  height: 14.3141rem;
-  flex-shrink: 0;
-}
-.iphone-14-pro-max-5-RiR .auto-group-gnrm-KBX .auto-group-olmo-Ypy .group-36-6G9 .auto-group-5xqm-7Kf .auto-group-ouav-S73 {
-  width: 100%;
-  height: 100%;
-}
-.iphone-14-pro-max-5-RiR .auto-group-gnrm-KBX .auto-group-olmo-Ypy .group-36-6G9 .category-BaR {
-  display: flex;
-  font-size: 2.2rem;
-  font-weight: 400;
-  line-height: 2.0454545455;
-  color: #ffffff;
-  font-family: Finger Paint, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
+
 .iphone-14-pro-max-5-RiR .auto-group-gnrm-KBX .auto-group-olmo-Ypy .frame-37-KRj {
   box-sizing: border-box;
   padding: 0 2rem;
@@ -213,48 +155,28 @@ body {
   background-color: #524d4d;
   border-radius: 0.8rem;
 }
-.iphone-14-pro-max-5-RiR .auto-group-n9vb-aMf {
-  margin: 0 49.5rem;
-  box-sizing: border-box;
-  padding: 4.85rem 0rem 2.15rem 1.3rem;
-  width: calc(100% - 99rem);
-  height: 12.1rem;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
+
+.submission-buttons{
+  padding-left: 42%;
 }
-.iphone-14-pro-max-5-RiR .auto-group-n9vb-aMf .frame-25-H1B {
-  margin-right: 2.9rem;
-  width: 15.9rem;
-  height: 100%;
-  text-align: right;
-  display: flex;
-  font-size: 2.2rem;
-  font-weight: 400;
-  line-height: 2.2727272727;
-  color: #ffffff;
+
+.submission-buttons button{
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+  font-size: 3rem;
+  border-radius: 10px;
   font-family: Finger Paint, 'Source Sans Pro';
-  white-space: nowrap;
-  align-items: center;
-  justify-content: center;
-  background-color: #524d4d;
-  border-radius: 0.8rem;
-  flex-shrink: 0;
+  border: none;
 }
-.iphone-14-pro-max-5-RiR .auto-group-n9vb-aMf .frame-36-xND {
-  width: 15.9rem;
-  height: 100%;
-  text-align: right;
-  display: flex;
-  font-size: 2.2rem;
-  font-weight: 400;
-  line-height: 2.2727272727;
-  color: #ffffff;
-  font-family: Finger Paint, 'Source Sans Pro';
-  white-space: nowrap;
-  align-items: center;
-  justify-content: center;
-  background-color: #cd6464;
-  border-radius: 0.8rem;
-  flex-shrink: 0;
+
+.discard-button button{
+  background-color: rgb(241, 83, 83);
+}
+.remove-button button{
+  background-color: #f3f708;
+}
+
+button:hover{
+  cursor: pointer;
 }
