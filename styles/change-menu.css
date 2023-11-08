@@ -13,31 +13,26 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
-}.iphone-14-pro-max-2-2Tb {
-  box-sizing: border-box;
-  padding: 5rem 4.5rem 31.1rem 4.5rem;
   width: 100%;
-  overflow: hidden;
-  position: relative;
-  align-items: center;
+  height: 100%;
+  align-items: center ;
   display: flex;
   flex-direction: column;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../assets/iphone-14-pro-max-2-bg.png');
+  background-image: url('https://images.unsplash.com/photo-1447078806655-40579c2520d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
-.iphone-14-pro-max-2-2Tb .arrow-left-jcu {
-  margin: 0rem 131.8rem 9.1rem 0rem;
-  width: 3.2rem;
-  height: 3.2rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
+
+.iphone-14-pro-max-2-2Tb {
+  box-sizing: border-box;
+  padding: 5rem 4.5rem 17.05rem 4.5rem;
+  width: 100%;
+  overflow: hidden;
+} 
 .iphone-14-pro-max-2-2Tb .revamp-your-menu-4QH {
   margin: 0rem 0.1rem 8.2rem 0rem;
+  padding-left: 43%;
   max-width: 22.5rem;
   display: flex;
   align-items: center;
@@ -49,71 +44,23 @@ body {
   font-family: Finger Paint, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.iphone-14-pro-max-2-2Tb .frame-16-kH7 {
-  margin: 0rem 50.8rem 3.6rem 50.8rem;
-  width: calc(100% - 101.6rem);
-  height: 6.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 1.875;
-  color: #ffffff;
+
+.selection-buttons{
+  padding-left: 39% ;
+  font-size: medium;
   font-family: Finger Paint, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: #524e4e;
-  border-radius: 2.5rem;
-  flex-shrink: 0;
 }
-.iphone-14-pro-max-2-2Tb .frame-17-DAh {
-  margin: 0rem 50.8rem 3.6rem 50.8rem;
-  width: calc(100% - 101.6rem);
-  height: 6.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 1.875;
-  color: #ffffff;
+.selection-buttons button{
+  margin: 10px;
   font-family: Finger Paint, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: #524e4e;
-  border-radius: 2.5rem;
-  flex-shrink: 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 300px;
+  background-color: #524d4d;
+  color: aliceblue;
+  font-size: 1.5em;
 }
-.iphone-14-pro-max-2-2Tb .frame-18-h5s {
-  margin: 0rem 50.8rem 3.6rem 50.8rem;
-  width: calc(100% - 101.6rem);
-  height: 6.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 1.875;
-  color: #ffffff;
-  font-family: Finger Paint, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: #524e4e;
-  border-radius: 2.5rem;
-  flex-shrink: 0;
-}
-.iphone-14-pro-max-2-2Tb .frame-19-BWq {
-  margin: 0 50.8rem;
-  width: calc(100% - 101.6rem);
-  height: 6.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 1.875;
-  color: #ffffff;
-  font-family: Finger Paint, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: #524e4e;
-  border-radius: 2.5rem;
-  flex-shrink: 0;
+button:hover{
+  cursor: pointer;
 }

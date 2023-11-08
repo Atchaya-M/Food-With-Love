@@ -14,7 +14,6 @@ input {
 }
 body {
   width: auto;
-  /* position: relative; */
   align-items: center ;
   overflow: hidden;
   display: flex;
@@ -31,14 +30,7 @@ body {
  
   
 }
-.iphone-14-pro-max-9-JPB .arrow-left-RCu {
-  margin: 0rem 131.8rem 2.5rem 0rem;
-  width: 3.2rem;
-  height: 3.2rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
+
 .iphone-14-pro-max-9-JPB .your-next-culinary-move-jzH {
   margin-bottom: 15.7rem;
   max-width: 30.5rem;
@@ -51,23 +43,7 @@ body {
   font-family: Finger Paint, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.iphone-14-pro-max-9-JPB .frame-12-qnR {
-  margin: 0rem 52.6rem 8rem 52.7rem;
-  width: calc(100% - 105.3rem);
-  height: 6.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 1.875;
-  color: #ffffff;
-  font-family: Finger Paint, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: #cd6464;
-  border-radius: 2.5rem;
-  flex-shrink: 0;
-}
+
 .iphone-14-pro-max-9-JPB .frame-13-7V3 {
   margin: 0rem 52.6rem 0rem 52.7rem;
   width: calc(100% - 105.3rem);
@@ -85,9 +61,30 @@ body {
   border-radius: 2.5rem;
   flex-shrink: 0;
 }
-.iphone-14-pro-max-9-JPB .iphone-14-pro-max-9-JPB-bg {
-  width: 144rem;
-  height: 102.4rem;
-  position: relative;
-  background-image: url('REPLACE_IMAGE:4e207818363fee188b840637afb0d9332b4b3f71');
+
+.submission-buttons{
+  display: flex;
+  margin: 10px;
+  padding-left: 400px;
+}
+
+.submission-buttons button{
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+  font-size: 3rem;
+  border-radius: 10px;
+  font-family: Finger Paint, 'Source Sans Pro';
+  border: none;
+}
+
+.explore-button button{
+  background-color: rgb(241, 83, 83);
+}
+.review-button button{
+  background-color: #f3f708;
+}
+
+button:hover{
+  cursor: pointer;
 }

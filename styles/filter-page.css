@@ -13,29 +13,22 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
-}.filter-page-qWZ {
-  box-sizing: border-box;
-  padding: 5rem 4.5rem 17.25rem 4.5rem;
   width: 100%;
-  overflow: hidden;
-  position: relative;
-  align-items: center;
+  height: 100%;
+  align-items: center ;
   display: flex;
   flex-direction: column;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../assets/filter-page-bg.png');
-  border-radius: 6rem;
-}
-.filter-page-qWZ .arrow-left-LiD {
-  margin: 0rem 131.8rem 1.7rem 0rem;
-  width: 3.2rem;
-  height: 3.2rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
+  background-image: url('https://img.freepik.com/free-photo/italian-food-concept-with-pasta-space-left_23-2147686519.jpg?w=1060&t=st=1699450409~exp=1699451009~hmac=b186fa3ddbd38582b0238632ea9bc156a588a3ce2f9b62adb4d270d31d0d013f');
+  
+}.filter-page-qWZ {
+  box-sizing: border-box;
+  padding: 5rem 4.5rem 17.05rem 4.5rem;
+  width: 100%;
+  overflow: hidden;
+  background: fixed;
 }
 .filter-page-qWZ .refine-your-experience-eD7 {
   margin: 0rem 0.1rem 1.053rem 0rem;
@@ -46,7 +39,8 @@ body {
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.5625;
-  color: #aaad1c;
+  padding-left: 43%;
+  color: #e5e828;
   font-family: Finger Paint, 'Source Sans Pro';
   flex-shrink: 0;
 }
@@ -66,18 +60,8 @@ body {
   height: calc(100% - 6.6345rem);
   flex-shrink: 0;
 }
-.filter-page-qWZ .auto-group-nkhs-X21 .auto-group-y2i5-RdB .auto-group-gynr-v49 {
-  width: 15.4rem;
-  height: 100%;
-}
-.filter-page-qWZ .auto-group-nkhs-X21 .group-34-fGd {
-  width: 36.1867rem;
-  height: 100%;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
+
+
 .filter-page-qWZ .auto-group-nkhs-X21 .group-34-fGd .cuisine-QED {
   margin: 0rem 0rem 2.379rem 2.998rem;
   display: flex;

@@ -13,40 +13,31 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
-}.iphone-14-pro-max-6-URf {
-  box-sizing: border-box;
-  padding: 5rem 4.5rem 36.8rem 4.5rem;
   width: 100%;
-  overflow: hidden;
-  position: relative;
+  height: 100%;
+  /* position: relative; */
+  align-items: center ;
   display: flex;
   flex-direction: column;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../assets/iphone-14-pro-max-6-bg.png');
-  border-radius: 6rem;
-}
-.iphone-14-pro-max-6-URf .arrow-left-bFP {
-  margin-bottom: 5.7rem;
-  width: 3.2rem;
-  height: 3.2rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
+  background-image: url('https://images.unsplash.com/photo-1509358271058-acd22cc93898?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}.iphone-14-pro-max-6-URf {
+  box-sizing: border-box;
+  padding: 5rem 4.5rem 17.05rem 4.5rem;
+  width: 100%;
+  overflow: hidden;
 }
 .iphone-14-pro-max-6-URf .expand-your-culinary-universe-Xeq {
-  margin-bottom: 1.5rem;
   width: 100%;
-  max-width: 35.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.40625;
-  color: #aaad1c;
+  color: #d9d9d9;
   font-family: Finger Paint, 'Source Sans Pro';
   flex-shrink: 0;
 }
