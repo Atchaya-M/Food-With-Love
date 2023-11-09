@@ -16,11 +16,10 @@
   <div class="create-your-account-A9f">Create your account</div>
   <div class="auto-group-kwvs-eqX">
     <div class="auto-group-yr73-xbK">
-      <div class="frame-1-umT">Email</div>
-      <div class="frame-2-Nuw">New Password</div>
+      <input class="email-input" placeholder="Email" id="email" type="email">
+      <input class="password-input" placeholder="Password" id="password" type="password">
     </div>
   </div>
-  <div class="frame-3-fu3">Confirm Password</div>
   <div class="auto-group-k84z-jtu">
     <div class="frame-4-FsF">
       <img class="ellipse-1-nsB" src="./assets/ellipse-1.png"/>
@@ -32,7 +31,7 @@
     </div>
   </div>
   <div class="frame-9-yaH">
-    <div class="frame-6-JsT">SignUp</div>
+    <input class="signup" id="signUp" type="submit" name="signup-submit" value="Sign Up">
     <div class="frame-8-HzH">
       <div class="or-signup-using-DN9">Or SignUp Using</div>
       <div class="frame-1-7iR">
@@ -43,3 +42,57 @@
   </div>
 </div>
 </body>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+  import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
+  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCEVw3ucTCET2GSRsbNucmnn5AmvnDyMPE",
+    authDomain: "we-project-2349d.firebaseapp.com",
+    databaseURL: "https://we-project-2349d-default-rtdb.firebaseio.com",
+    projectId: "we-project-2349d",
+    storageBucket: "we-project-2349d.appspot.com",
+    messagingSenderId: "569042719947",
+    appId: "1:569042719947:web:f630806c8ac47c36d0374e"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+  const auth = getAuth();
+
+signUp.addEventListener('click',(e) => {
+
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+
+  createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed up 
+    const user = userCredential.user;
+
+    set(ref(database, 'users/' + user.uid),{
+      email: email
+    })
+    alert('user created');
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+
+    alert(errorMessage);
+    // ..
+  });
+
+});
+</script>
+
+</html>

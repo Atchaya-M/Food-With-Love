@@ -171,22 +171,18 @@ body {
   color: aliceblue;
   font-size: 1.5em;
 }
-.login-page-main .auto-group-zdj9-nSV .login-button{
-  padding-left: 30%;
-}
-.login-page-main .auto-group-zdj9-nSV .login-button button{
+
+.login-page-main .auto-group-zdj9-nSV .login{
   padding: 10px;
   padding-left: 30%;
   padding-right: 30%;
   margin: 10px;
+  align-items: center;
   width: auto;
-  font-size: 3rem;
+  font-size: 2rem;
   color: aliceblue;
   border-radius: 10px;
   font-family: Finger Paint, 'Source Sans Pro';
   background-color: rgb(241, 83, 83);
   border: none;
-}
-button:hover{
-  cursor: pointer;
 }

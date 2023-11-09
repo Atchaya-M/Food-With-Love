@@ -64,7 +64,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.sign-up-page-Y8H .auto-group-kwvs-eqX .auto-group-yr73-xbK .frame-1-umT {
+.sign-up-page-Y8H .auto-group-kwvs-eqX .auto-group-yr73-xbK .email-input {
   margin-bottom: 1.3rem;
   box-sizing: border-box;
   padding: 0 2rem;
@@ -80,7 +80,7 @@ body {
   border-radius: 0.8rem;
   flex-shrink: 0;
 }
-.sign-up-page-Y8H .auto-group-kwvs-eqX .auto-group-yr73-xbK .frame-2-Nuw {
+.sign-up-page-Y8H .auto-group-kwvs-eqX .auto-group-yr73-xbK .password-input {
   box-sizing: border-box;
   padding: 0 2rem;
   width: 100%;
@@ -246,4 +246,18 @@ body {
   vertical-align: top;
   border-radius: 2rem;
   flex-shrink: 0;
+}
+.frame-9-yaH .signup{
+  padding: 10px;
+  padding-left: 30%;
+  padding-right: 30%;
+  margin: 10px;
+  align-items: center;
+  width: auto;
+  font-size: 2rem;
+  color: aliceblue;
+  border-radius: 10px;
+  font-family: Finger Paint, 'Source Sans Pro';
+  background-color: rgb(241, 83, 83);
+  border: none;
 }
