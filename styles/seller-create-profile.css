@@ -13,17 +13,20 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
-}.iphone-14-pro-max-7-GCy {
   width: 100%;
-  height: 102.4rem;
-  position: relative;
-  overflow: hidden;
-  background-size: 100% 100%;
+  height: 100%;
+  align-items: center ;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url('../assets/iphone-14-pro-max-7-bg.png');
-  border-radius: 6rem;
+}.iphone-14-pro-max-7-GCy {
+  box-sizing: border-box;
+  padding: 5rem 4.5rem 17.05rem 4.5rem;
+  width: 100%;
+  overflow: hidden;
 }
 .iphone-14-pro-max-7-GCy .craft-your-profile-Baq {
   width: 30.8rem;
@@ -211,13 +214,4 @@ body {
   width: 14.9rem;
   height: 3.2rem;
   flex-shrink: 0;
-}
-.iphone-14-pro-max-7-GCy .arrow-left-fER {
-  width: 3.2rem;
-  height: 3.2rem;
-  position: absolute;
-  left: 4.5rem;
-  top: 5rem;
-  object-fit: contain;
-  vertical-align: top;
 }

@@ -43,7 +43,7 @@ body {
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.5625;
-  color: #bbd22a;
+  color: #d0e73c;
   font-family: Finger Paint, 'Source Sans Pro';
 }
 .login-page-main .auto-group-zdj9-nSV {
@@ -170,4 +170,23 @@ body {
   background-color: #524d4d;
   color: aliceblue;
   font-size: 1.5em;
+}
+.login-page-main .auto-group-zdj9-nSV .login-button{
+  padding-left: 30%;
+}
+.login-page-main .auto-group-zdj9-nSV .login-button button{
+  padding: 10px;
+  padding-left: 30%;
+  padding-right: 30%;
+  margin: 10px;
+  width: auto;
+  font-size: 3rem;
+  color: aliceblue;
+  border-radius: 10px;
+  font-family: Finger Paint, 'Source Sans Pro';
+  background-color: rgb(241, 83, 83);
+  border: none;
+}
+button:hover{
+  cursor: pointer;
 }
