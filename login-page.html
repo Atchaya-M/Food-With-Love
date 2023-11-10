@@ -18,12 +18,91 @@
       <input class="dish-inp" id="email" placeholder="Email" type="email"> 
       <input class="dish-inp" id="password" placeholder="Password" type="password"> 
     </div>
-    <input class="login" id="signUp" type="submit" name="signup-submit" value="Log In">
+    <input class="login" id="login" type="submit" name="login" value="Log In">
     <div class="or-login-using">Or Login Using</div>
   </div>
   <div class="dont-have-an-account-signup">Don't have an account? <a href="sign-up-page.html">SignUp</a> </div>
 </div>
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+  import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword  } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCEVw3ucTCET2GSRsbNucmnn5AmvnDyMPE",
+    authDomain: "we-project-2349d.firebaseapp.com",
+    databaseURL: "https://we-project-2349d-default-rtdb.firebaseio.com",
+    projectId: "we-project-2349d",
+    storageBucket: "we-project-2349d.appspot.com",
+    messagingSenderId: "569042719947",
+    appId: "1:569042719947:web:f630806c8ac47c36d0374e"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+  const auth = getAuth();
+  const signUp = document.getElementById('login');
+  const login = document.getElementById('login'); 
+
+signUp.addEventListener('click',(e) => {
+
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+
+  createUserWithWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed up 
+    const user = userCredential.user;
+
+
+    set(ref(database, 'users/' + user.uid),{
+      email: email,
+    })
+    alert('logged-in');
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+ 
+    alert(errorMessage);
+    // ..
+  });
+
+});
+
+login.addEventListener('click',(e) => {
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+
+  signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+
+    const dt = new Date();
+    update(ref(database, 'users/' + user.uid),{
+      last_login: dt,
+    })
+    // ...
+    alert('User logged in');
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+
+    alert(errorMessage);
+  });
+
+});
+</script>
 </body>
-
-
 </html>
