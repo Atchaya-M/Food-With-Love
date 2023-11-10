@@ -33,9 +33,10 @@ body {
 
 .iphone-14-pro-max-9-JPB .your-next-culinary-move-jzH {
   margin-bottom: 15.7rem;
+  margin-top: -10rem;
   max-width: 30.5rem;
   display: flex;
-  padding-left: 40%;
+  padding-left: 35%;
   padding-top: 10%;
   font-size: 3.2rem;
   font-weight: 400;
@@ -43,6 +44,7 @@ body {
   color: #aaad1c;
   font-family: Finger Paint, 'Source Sans Pro';
   flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .iphone-14-pro-max-9-JPB .frame-13-7V3 {
@@ -65,9 +67,11 @@ body {
 
 .submission-buttons{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 10px;
   margin-top: -125px;
-  padding-left: 300px;
 }
 
 .submission-buttons button{
@@ -78,10 +82,6 @@ body {
   border-radius: 10px;
   font-family: Finger Paint, 'Source Sans Pro';
   border: none;
-}
-
-.explore-button{
-  padding-left: 300px;
 }
 
 .explore-button button{
