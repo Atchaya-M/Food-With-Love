@@ -66,7 +66,8 @@ body {
 .submission-buttons{
   display: flex;
   margin: 10px;
-  padding-left: 400px;
+  margin-top: -125px;
+  padding-left: 300px;
 }
 
 .submission-buttons button{
@@ -79,8 +80,13 @@ body {
   border: none;
 }
 
+.explore-button{
+  padding-left: 300px;
+}
+
 .explore-button button{
   background-color: rgb(241, 83, 83);
+
 }
 .review-button button{
   background-color: #f3f708;
