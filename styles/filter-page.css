@@ -21,7 +21,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('https://img.freepik.com/free-photo/italian-food-concept-with-pasta-space-left_23-2147686519.jpg?w=1060&t=st=1699450409~exp=1699451009~hmac=b186fa3ddbd38582b0238632ea9bc156a588a3ce2f9b62adb4d270d31d0d013f');
+  background-image: url('https://img.freepik.com/free-photo/various-vegetables-black-table-with-space-message_1220-616.jpg?w=1060&t=st=1699701785~exp=1699702385~hmac=1ec11bfe3797449c3ac4022037efa79d8d6627815bc2344fd3d317ec67f36b0d');
   
 }.filter-page-qWZ {
   box-sizing: border-box;
@@ -37,6 +37,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 3.2rem;
+  white-space :nowrap;
   font-weight: 400;
   line-height: 1.5625;
   padding-left: 43%;
@@ -70,7 +71,7 @@ body {
   font-size: 2.8rem;
   font-weight: 400;
   line-height: 1.6071428571;
-  color: #ffffff;
+  color:rgb(234, 7, 188);
   font-family: Finger Paint, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
@@ -408,7 +409,7 @@ body {
   font-size: 2.8rem;
   font-weight: 400;
   line-height: 1.6071428571;
-  color: #ffffff;
+  color:rgb(234, 7, 188);
   font-family: Finger Paint, 'Source Sans Pro';
   white-space: nowrap;
 }
