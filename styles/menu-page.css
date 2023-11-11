@@ -22,7 +22,8 @@ body {
   position: relative;
   display: flex;
   align-items: flex-end;
-  background-size: 100% 210.728%;
+  background-size: cover;
+  background: fixed;
   background-image: url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 .menu-page-Quw .auto-group-4pbt-vtH {
