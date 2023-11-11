@@ -13,54 +13,33 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
-}.survey-page-w69 {
-  box-sizing: border-box;
-  padding: 5rem 55.1rem 5rem 4.5rem;
   width: 100%;
-  overflow: hidden;
-  position: relative;
+  height: 100%;
+  align-items: center ;
   display: flex;
-  align-items: flex-start;
-  background-size: 100% 100%;
+  flex-direction: column;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url('../assets/survey-page-bg.png');
-  border-radius: 6rem;
+
+}.survey-page-w69 {
+  box-sizing: border-box;
+  padding: 5rem 4.5rem 17.05rem 4.5rem;
+  width: 100%;
+  overflow: hidden;
+
 }
-.survey-page-w69 .auto-group-punh-dzZ {
+/* .survey-page-w69 .auto-group-punh-dzZ {
   margin-right: 1.1rem;
   width: 33rem;
   flex-shrink: 0;
-}
-.survey-page-w69 .auto-group-punh-dzZ .arrow-left-may {
-  margin-bottom: 11.65rem;
-  width: 3.2rem;
-  height: 3.2rem;
-  object-fit: contain;
-  vertical-align: top;
-}
+} */
 .survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM {
-  margin: 0rem 0rem 0.85rem 3.1rem;
-  width: 29.9rem;
-  height: 22.35rem;
-  position: relative;
-}
-.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-6-1ER {
-  box-sizing: border-box;
-  padding-left: 1.9rem;
-  width: 8.9rem;
-  height: 4.5rem;
-  position: absolute;
-  left: 1.4rem;
-  top: 14.05rem;
-  display: flex;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 2.25;
-  color: #ffffff;
-  font-family: Finger Paint, 'Source Sans Pro';
-  white-space: nowrap;
+  /* margin: 0rem 0rem 0.85rem 3.1rem; */
+  /* width: 29.9rem; */
+  height: 0.35rem;
+  /* position: relative; */
 }
 .survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 {
   width: 29.3rem;
@@ -98,13 +77,13 @@ body {
   display: flex;
   align-items: center;
 }
-.survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-2-Sj3 .rectangle-5-Nch {
+/* .survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-2-Sj3 .rectangle-5-Nch {
   margin-right: 1rem;
   width: 1.1rem;
   height: 1.1rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
-}
+} */
 .survey-page-w69 .auto-group-punh-dzZ .auto-group-bber-6NM .group-39-U81 .auto-group-x1jf-1dj .group-2-Sj3 .north-indian-iAm {
   display: flex;
   font-size: 2rem;

@@ -22,16 +22,16 @@
   </div>
   <div class="auto-group-k84z-jtu">
     <div class="frame-4-FsF">
-      <img class="ellipse-1-nsB" src="./assets/ellipse-1.png"/>
+      <input class="ellipse-1-nsB" type="radio" name="usertype" value="buyer-main"/>
       <div class="buyer-7uT">Buyer</div>
     </div>
     <div class="frame-5-DSh">
-      <img class="ellipse-2-95T" src="./assets/ellipse-2.png"/>
+      <input class="ellipse-2-95T" type="radio" name="usertype" value="seller-main"/>
       <div class="seller-4TK">Seller</div>
     </div>
   </div>
   <div class="frame-9-yaH">
-    <input class="signup" id="signUp" type="submit" name="signup-submit" value="Sign Up">
+    <input class="signup" id="signUp" type="submit" name="signup-submit" value="Sign Up" onclick="redirectToPage()">
     <div class="frame-8-HzH">
       <div class="or-signup-using-DN9">Or SignUp Using</div>
       <div class="frame-1-7iR">
@@ -42,6 +42,18 @@
   </div>
 </div>
 </body>
+
+<script>
+  function redirectToPage() {
+      var selectedOption = document.querySelector('input[name="usertype"]:checked').value;
+      
+      if (selectedOption === 'buyer-main') {
+          window.location.href = 'buyer-main.html';
+      } else if (selectedOption === 'seller-main') {
+          window.location.href = 'seller-main.html';
+      }
+  }
+</script>
 
 <script type="module">
   // Import the functions you need from the SDKs you need
@@ -72,6 +84,7 @@ signUp.addEventListener('click',(e) => {
 
   var email = document.getElementById('email').value;
   var password = document.getElementById('password').value;
+  var usertype = document.getElementById('usertype').value;
 
   createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
@@ -79,7 +92,8 @@ signUp.addEventListener('click',(e) => {
     const user = userCredential.user;
 
     set(ref(database, 'users/' + user.uid),{
-      email: email
+      email: email,
+      usertype: usertype
     })
     alert('user created');
     // ...
