@@ -43,17 +43,6 @@
 </div>
 </body>
 
-<script>
-  function redirectToPage() {
-      var selectedOption = document.querySelector('input[name="usertype"]:checked').value;
-      
-      if (selectedOption === 'buyer-main') {
-          window.location.href = 'buyer-main.html';
-      } else if (selectedOption === 'seller-main') {
-          window.location.href = 'seller-main.html';
-      }
-  }
-</script>
 
 <script type="module">
   // Import the functions you need from the SDKs you need
@@ -80,33 +69,32 @@
   const database = getDatabase(app);
   const auth = getAuth();
 
-signUp.addEventListener('click',(e) => {
+  signUp.addEventListener('click', (e) => {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      var selectedOption = document.querySelector('input[name="usertype"]:checked').value;
 
-  var email = document.getElementById('email').value;
-  var password = document.getElementById('password').value;
-  var usertype = document.getElementById('usertype').value;
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          const user = userCredential.user;
 
-  createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed up 
-    const user = userCredential.user;
+          set(ref(database, 'users/' + user.uid), {
+            email: email,
+            usertype: selectedOption
+          });
 
-    set(ref(database, 'users/' + user.uid),{
-      email: email,
-      usertype: usertype
-    })
-    alert('user created');
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-
-    alert(errorMessage);
-    // ..
-  });
-
-});
-</script>
+          // Redirect based on usertype
+          if (selectedOption === 'buyer-main') {
+            window.location.href = 'buyer-main.html';
+          } else if (selectedOption === 'seller-main') {
+            window.location.href = 'seller-main.html';
+          }
+        })
+        .catch((error) => {
+          const errorMessage = error.message;
+          alert(errorMessage);
+        });
+    });
+  </script>
 
 </html>
