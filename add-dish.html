@@ -1,30 +1,120 @@
 <!DOCTYPE html>
-<html>
-<head> 
-  <meta charset="utf-8" />
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <title>iPhone 14 Pro Max - 3</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Finger+Paint%3A400"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400"/>
-  <link rel="stylesheet" href="./styles/add-dish.css"/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/add-dish.css"/>
+    <title>Menu Management</title>
 </head>
 <body>
-  
-<div class="iphone-14-pro-max-3-Ap1">
-  <div class="add-flavour-add-dish-1Jq">Add flavour, Add dish!</div>
-  <div class="auto-group-qjgu-Vzh">
-    <div class="inp-fields">
-    <input class="dish-inp" placeholder="dish name" type="text"> 
-    <input class="dish-inp" placeholder="ingredients" type="text"> 
-    <input class="dish-inp" placeholder="quantity" type="number"> 
-    <input class="dish-inp" placeholder="Availability schedule" type="date"> 
-  </div>
-  </div>
-</div>
-<div class="submission-buttons">
-  <div class="discard-button"><button>Discard</button></div>
-  <div class="add-dish-button"><button>Add dish</button></div>
-</div>
+    <header>
+        <h1>Menu Management</h1>
+    </header>
+
+    <section class="menu-form">
+        <h2>Add New Category</h2>
+        <form id="category-form">
+            <label for="category-name">Category Name:</label>
+            <input type="text" id="category-name" name="category-name" required>
+            <button type="button" onclick="addCategory()">Add Category</button>
+        </form>
+
+        <h2>Add New Menu Item</h2>
+        <form id="menu-item-form">
+            <label for="item-name">Item Name:</label>
+            <input type="text" id="item-name" name="item-name" required>
+
+            <label for="item-price">Item Price:</label>
+            <input type="number" id="item-price" name="item-price" min="0" step="0.01" required>
+
+            <label for="item-category">Item Category:</label>
+            <select id="item-category" name="item-category" required>
+                <!-- Options will be dynamically added using JavaScript -->
+            </select>
+
+            <button type="button" onclick="addMenuItem()">Add Menu Item</button>
+        </form>
+    </section>
+
+    <section class="menu-preview">
+        <h2>Preview</h2>
+        <div id="menu-preview">
+            <!-- Menu items and categories will be dynamically added using JavaScript -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Restaurant</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Sample categories (you would fetch this from the backend)
+            const categories = ['Appetizers', 'Main Courses', 'Desserts'];
+
+            // Add categories to the select element
+            const categorySelect = document.getElementById('item-category');
+            categories.forEach(function (category) {
+                const option = document.createElement('option');
+                option.value = category;
+                option.textContent = category;
+                categorySelect.appendChild(option);
+            });
+
+            // Sample menu items (you would fetch this from the backend)
+            const menuItems = [
+                { name: 'Bruschetta', price: 8.99, category: 'Appetizers' },
+                { name: 'Grilled Salmon', price: 18.99, category: 'Main Courses' },
+                { name: 'Chocolate Lava Cake', price: 7.99, category: 'Desserts' },
+            ];
+
+            // Display initial menu preview
+            updateMenuPreview(menuItems);
+        });
+
+        function addCategory() {
+            const categoryForm = document.getElementById('category-form');
+            const categoryName = document.getElementById('category-name').value;
+
+            if (categoryName.trim() !== '') {
+                // You would typically send this data to the backend to save
+                console.log('Category added:', categoryName);
+
+                // Clear the form
+                categoryForm.reset();
+            }
+        }
+
+        function addMenuItem() {
+            const menuItemForm = document.getElementById('menu-item-form');
+            const itemName = document.getElementById('item-name').value;
+            const itemPrice = parseFloat(document.getElementById('item-price').value);
+            const itemCategory = document.getElementById('item-category').value;
+
+            if (itemName.trim() !== '' && !isNaN(itemPrice) && itemPrice >= 0) {
+                // You would typically send this data to the backend to save
+                console.log('Menu item added:', { name: itemName, price: itemPrice, category: itemCategory });
+
+                // Clear the form
+                menuItemForm.reset();
+            }
+        }
+
+        function updateMenuPreview(menuItems) {
+            const menuPreview = document.getElementById('menu-preview');
+            menuPreview.innerHTML = '';
+
+            menuItems.forEach(function (item) {
+                const menuItem = document.createElement('div');
+                menuItem.classList.add('menu-item');
+                menuItem.innerHTML = `
+                    <h3>${item.name}</h3>
+                    <p>Price: $${item.price.toFixed(2)}</p>
+                    <p>Category: ${item.category}</p>
+                `;
+                menuPreview.appendChild(menuItem);
+            });
+        }
+    </script>
 </body>
+</html>
