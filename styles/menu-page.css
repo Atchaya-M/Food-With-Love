@@ -1,12 +1,16 @@
+html{
+    scroll-behavior: smooth;
+
+}
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Poppins;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #F9E57D;
+    color: #000;
     text-align: center;
     padding: 1em;
 }
@@ -67,8 +71,8 @@ header {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #F9E57D;
+    color: #000;
     text-align: center;
     padding: 1em;
     position: fixed;
