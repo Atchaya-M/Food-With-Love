@@ -35,56 +35,57 @@
     <div class="row">
         <!-- Profile Form -->
         <div class="col-md-6">
-            <div style="height: 1500px;width: 770px; padding-top: 57px; padding-bottom: 77.25px; padding-left: 37px; padding-right: 37px; left: -200px; top: 100px; position: absolute; border-radius: 15.97px; border: 0.80px black solid; flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex; background-color: white;">
-                <div style="width: 319px; height: 375.75px; position: relative; left: 0.02vw;">
+            <div style="height: 800px;width: 770px; padding-top: 37px; padding-bottom: 77.25px; padding-left: 37px; padding-right: 37px; left: -200px; top: 100px; position: absolute; border-radius: 15.97px; border: 0.80px black solid; flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex; background-color: white;">
+                <div style="width: 319px; height: 175.75px; position: relative; left: 0.02vw;">
                     <div style="width: 300px; height: 204.20px; left: 4px; top: 108px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40.73px; display: inline-flex">
-                        <form>
+                        <form action="/update-menu" method="post">
                             <div style="margin-top: 30px; text-align: left;">
-                                <label for="username" style="display: block; font-size: 22px; margin-bottom: 5px; left: 0.02vw">Dish 1</label>
-                                <input type="text" id="username" name="username" style="width: 100%; padding: 10px; font-size: 22px;">
+                                <label for="dish1" style="display: block; font-size: 22px; margin-bottom: 5px;">Dish 1</label>
+                                <input type="text" id="dish1" name="dish1" style="width: 100%; padding: 10px; font-size: 22px;">
                             </div>
 
                             <div style="margin-top: 30px; text-align: left;">
-                                <label for="username" style="display: block; font-size: 22px; margin-bottom: 5px; left: 0.02vw">Price 1</label>
-                                <input type="text" id="username" name="username" style="width: 100%; padding: 10px; font-size: 22px;">
-                            </div>
-
-                            <div style="margin-top: 20px; text-align: left;">
-                                <label for="email" style="display: block; font-size: 22px; margin-bottom: 5px;">Dish 2</label>
-                                <input type="email" id="email" name="email" style="width: 100%; padding: 10px; font-size: 22px;">
-                            </div>
-
-                            <div style="margin-top: 30px; text-align: left;">
-                                <label for="username" style="display: block; font-size: 22px; margin-bottom: 5px; left: 0.02vw">Price 2</label>
-                                <input type="text" id="username" name="username" style="width: 100%; padding: 10px; font-size: 22px;">
+                                <label for="price1" style="display: block; font-size: 22px; margin-bottom: 5px;">Price 1</label>
+                                <input type="text" id="price1" name="price1" style="width: 100%; padding: 10px; font-size: 22px;">
                             </div>
                             <div style="margin-top: 20px; text-align: left;">
-                                <label for="password" style="display: block; font-size: 22px; margin-bottom: 5px;">Dish 3</label>
-                                <input type="password" id="password" name="password" style="width: 100%; padding: 10px; font-size: 22px;">
+                                <label for="dish2" style="display: block; font-size: 22px; margin-bottom: 5px;">Dish 2</label>
+                                <input type="text" id="dish2" name="dish2" style="width: 100%; padding: 10px; font-size: 22px;">
                             </div>
 
                             <div style="margin-top: 30px; text-align: left;">
-                                <label for="username" style="display: block; font-size: 22px; margin-bottom: 5px; left: 0.02vw">Price 3</label>
-                                <input type="text" id="username" name="username" style="width: 100%; padding: 10px; font-size: 22px;">
+                                <label for="price2" style="display: block; font-size: 22px; margin-bottom: 5px; left: 0.02vw">Price 2</label>
+                                <input type="text" id="price2" name="price2" style="width: 100%; padding: 10px; font-size: 22px;">
                             </div>
                             <div style="margin-top: 20px; text-align: left;">
-                                <label for="password" style="display: block; font-size: 22px; margin-bottom: 5px;">Dish 4</label>
-                                <input type="password" id="password" name="password" style="width: 100%; padding: 10px; font-size: 22px;">
+                                <label for="dish3" style="display: block; font-size: 22px; margin-bottom: 5px;">Dish 3</label>
+                                <input type="text" id="dish3" name="dish3" style="width: 100%; padding: 10px; font-size: 22px;">
                             </div>
 
                             <div style="margin-top: 30px; text-align: left;">
-                                <label for="username" style="display: block; font-size: 22px; margin-bottom: 5px; left: 0.02vw">Price 4</label>
-                                <input type="text" id="username" name="username" style="width: 100%; padding: 10px; font-size: 22px;">
+                                <label for="price3" style="display: block; font-size: 22px; margin-bottom: 5px; left: 0.02vw">Price 3</label>
+                                <input type="text" id="price3" name="price3" style="width: 100%; padding: 10px; font-size: 22px;">
                             </div>
                             <div style="margin-top: 20px; text-align: left;">
-                                <label for="password" style="display: block; font-size: 22px; margin-bottom: 5px;">Dish 5</label>
-                                <input type="password" id="password" name="password" style="width: 100%; padding: 10px; font-size: 22px;">
+                                <label for="dish4" style="display: block; font-size: 22px; margin-bottom: 5px;">Dish 4</label>
+                                <input type="text" id="dish4" name="dish4" style="width: 100%; padding: 10px; font-size: 22px;">
+                            </div>
+
+                            <div style="margin-top: 30px; text-align: left;">
+                                <label for="price4" style="display: block; font-size: 22px; margin-bottom: 5px; left: 0.02vw">Price 4</label>
+                                <input type="text" id="price4" name="price4" style="width: 100%; padding: 10px; font-size: 22px;">
+                            </div>
+                            <div style="margin-top: 20px; text-align: left;">
+                                <label for="dish5" style="display: block; font-size: 22px; margin-bottom: 5px;">Dish 5</label>
+                                <input type="text" id="dish5" name="dish5" style="width: 100%; padding: 10px; font-size: 22px;">
                             </div>
 
                             <div style="margin-top: 30px; text-align: left;">
                                 <label for="username" style="display: block; font-size: 22px; margin-bottom: 5px; left: 0.02vw">Price 5</label>
                                 <input type="text" id="username" name="username" style="width: 100%; padding: 10px; font-size: 22px;">
                             </div>
+
+
                             <div style="margin-top: 32px;">
                                 <button type="submit" style="background-color: #F8D24A; color: black; border: none; padding: 15px 30px; border-radius: 5px; cursor: pointer; font-size: 18px;">Update</button>
                             </div>
@@ -93,7 +94,7 @@
                     <div style="width: 319px; height: 81px; left: 0px; top: 0px; position: absolute; text-align: center; color: black; font-size: 40px; font-family: Poppins; font-weight: 700; line-height: 29.60px; word-wrap: break-word">Update Menu</div>
                 </div>
             </div>
-            
+        </div>
         <!-- Preferences Form -->
         <div class="col-md-6">
             <div style="height: 1500px;width: 770px; padding-top: 57px; padding-bottom: 77.25px; padding-left: 0px; padding-right: 37px; left: 600px; top: 100px; position: absolute; border-radius: 15.97px; border: 0.80px black solid; flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex; background-color: white;">
@@ -102,7 +103,7 @@
                         <form action="/update-profile" method="post" enctype="multipart/form-data">
                             <img class="profile-image" src="Milk Powder Gulab Jamun • Spoon Fork And Food.jpeg"  />
                             <div style="margin-top: 280px; text-align: left;">
-                                <label for="username" style="display: block; font-size: 22px; margin-bottom: 5px; left: 0.02vw">Username</label>
+                                <label for="username" style="display: block; font-size: 22px; margin-bottom: 5px;">Username</label>
                                 <input type="text" id="username" name="username" style="width: 100%; padding: 10px; font-size: 22px;">
                             </div>
                             <div style="margin-top: 20px; text-align: left;">
@@ -125,7 +126,6 @@
                     <div style="width: 319px; height: 81px; left: 0px; top: 0px; position: absolute; text-align: center; color: black; font-size: 40px; font-family: Poppins; font-weight: 700; line-height: 29.60px; word-wrap: break-word">Update Profile</div>
                 </div>
             </div>
-            
         </div>
     </div>
 </div>

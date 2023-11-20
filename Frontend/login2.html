@@ -64,4 +64,75 @@
             </a>
     </div>
 </body>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+    import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    const firebaseConfig = {
+      apiKey: "AIzaSyDE9z868rmyfQUY1DBs5psW_77bj6nqrok",
+      authDomain: "food-with-love-de5c4.firebaseapp.com",
+      databaseURL: "https://food-with-love-de5c4-default-rtdb.firebaseio.com",
+      projectId: "food-with-love-de5c4",
+      storageBucket: "food-with-love-de5c4.appspot.com",
+      messagingSenderId: "307689000060",
+      appId: "1:307689000060:web:0b7e36a11a808030120df9"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+    const loginButton = document.getElementById('loginButton');
+  
+  // ... (previous code)
+  
+  loginButton.addEventListener('click', (e) => {
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+  
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+  
+        // Fetch usertype from the database
+        const userRef = ref(database, 'users/' + user.uid);
+        get(userRef)
+          .then((snapshot) => {
+            console.log(snapshot.val()); // Log the snapshot value to the console
+  
+            if (snapshot.exists()) {
+              const userData = snapshot.val();
+              const usertype = userData.usertype;
+  
+              // Redirect based on usertype
+              if (usertype === "buyer") {
+                window.location.href = 'kitchens_page.html';
+              } else if (usertype === "seller") {
+                window.location.href = 'change_menu.html';
+              }
+            } else {
+              // Handle the case where user data doesn't exist
+              alert('User data not found');
+            }
+          })
+          .catch((error) => {
+            console.error('Error getting user data:', error);
+            alert('Error getting user data');
+          });
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+  
+        alert(errorMessage);
+      });
+  });
+  
+
+  </script>
+  
 </html>
