@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to FoodWithLove</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .background-image {
+            position: absolute;
+            top: -25px;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            object-position: center;
+            z-index: -1; /* Set a lower z-index to place it behind other elements */
+        }
+
+        .content {
+            width: 50vw;
+            height: 100vh;
+            position: absolute;
+            left: 50vw;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1.60px;
+            word-wrap: break-word;
+        }
+
+        .content span {
+            font-size: 120px;
+            margin-bottom: 20px;
+        }
+
+        .content a {
+            text-decoration: none;
+            color: #FBF6E4;
+            display: block;
+            width: 362px;
+            height: 63px;
+            margin-top: 20px;
+            background: #F8D24A;
+            border-radius: 20px;
+            text-align: center;
+            line-height: 63px;
+            font-size: 22.40px;
+        }
+    </style>
+</head>
+<body>
+    <img class="background-image" src="home_trial.png" />
+    <div class="content">
+        <span>Welcome<br/>to FoodwithLove</span>
+        <a href="customer_signin.html">Become a customer, join now</a>
+        <a href="login.html">Already a member? Login</a>
+        <a href="cook_signup.html">Be part of the family, join now</a>
+    </div>
+</body>
+</html>
+

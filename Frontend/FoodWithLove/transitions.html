@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to FoodWithLove</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .slideshow-container {
+            max-width: 100%;
+            position: absolute;
+            margin: auto;
+            width: 100vw;
+            height:100vw;
+        }
+
+        .mySlides {
+            display: none;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <!-- Add your images in the .mySlides divs -->
+        <div class="mySlides">
+            <img src="Chana Masala Recipe (Restaurant Style) - Cubes N Juliennes.jpeg" alt="Image 1">
+        </div>
+        <div class="mySlides">
+            <img src="Corn Vada _ Food Styling and Photography.jpeg" alt="Image 2">
+        </div>
+        <div class="mySlides">
+            <img src="Sapad.jpeg" alt="Image 3">
+        </div>
+
+        <!-- Add more slides as needed -->
+
+        <script>
+            // JavaScript for image slideshow
+            var slideIndex = 0;
+
+            function showSlides() {
+                var slides = document.getElementsByClassName("mySlides");
+                
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+
+                slideIndex++;
+                
+                if (slideIndex > slides.length) {
+                    // After the slideshow, navigate to the welcome page
+                    window.location.href = "welcome_page.html";
+                    return;
+                }
+
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 5000); // Change slide every 2 seconds
+            }
+
+            // Start the slideshow when the page loads
+            showSlides();
+        </script>
+    </div>
+</body>
+</html>
