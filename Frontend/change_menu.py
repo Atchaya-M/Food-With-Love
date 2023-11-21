@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect
 import firebase_admin
-from firebase_admin import credentials
+from firebase_admin import credentials, db
 
 app = Flask(__name__)
 
@@ -11,13 +11,13 @@ firebase_admin.initialize_app(cred, {
 })
 
 # Initialize Realtime Database
-ref = firebase_admin.reference()
+ref = firebase_admin.db.reference()
 
 @app.route('/')
 def index():
     return render_template('change_menu.html')
 
-@app.route('/update-profile', methods=['POST'])
+@app.route('/update_profile', methods=['POST', 'GET'])
 def update_profile():
     if request.method == 'POST':
         # Extract form data
@@ -37,7 +37,7 @@ def update_profile():
 
     return redirect('/')
 
-@app.route('/update-menu', methods=['POST'])
+@app.route('/update_menu', methods=['POST'])
 def update_menu():
     if request.method == 'POST':
         # Extract form data for the menu update
@@ -55,7 +55,6 @@ def update_menu():
         dish5 = request.form.get('dish5')
         price5 = request.form.get('price5')
 
-        # Repeat for dish2, price2, ..., dish5, price5
 
         # Update Realtime Database with the menu data
         # This is just a basic example, you might want to structure your data differently
@@ -63,6 +62,14 @@ def update_menu():
         menu_ref.set({
             'dish1': dish1,
             'price1': price1,
+            'dish2': dish2,
+            'price2': price2,
+            'dish3': dish3,
+            'price3': price3,
+            'dish4': dish4,
+            'price4': price4,
+            'dish5': dish5,
+            'price5': price5
             # Add more fields as needed
         })
 

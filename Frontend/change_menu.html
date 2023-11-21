@@ -38,7 +38,7 @@
             <div style="height: 800px;width: 770px; padding-top: 37px; padding-bottom: 77.25px; padding-left: 37px; padding-right: 37px; left: -200px; top: 100px; position: absolute; border-radius: 15.97px; border: 0.80px black solid; flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex; background-color: white;">
                 <div style="width: 319px; height: 175.75px; position: relative; left: 0.02vw;">
                     <div style="width: 300px; height: 204.20px; left: 4px; top: 108px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40.73px; display: inline-flex">
-                        <form action="/update-menu" method="post">
+                        <form action="" id="menu">
                             <div style="margin-top: 30px; text-align: left;">
                                 <label for="dish1" style="display: block; font-size: 22px; margin-bottom: 5px;">Dish 1</label>
                                 <input type="text" id="dish1" name="dish1" style="width: 100%; padding: 10px; font-size: 22px;">
@@ -96,11 +96,11 @@
             </div>
         </div>
         <!-- Preferences Form -->
-        <div class="col-md-6">
+        <!-- <div class="col-md-6">
             <div style="height: 1500px;width: 770px; padding-top: 57px; padding-bottom: 77.25px; padding-left: 0px; padding-right: 37px; left: 600px; top: 100px; position: absolute; border-radius: 15.97px; border: 0.80px black solid; flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex; background-color: white;">
                 <div style="width: 319px; height: 375.75px; position: relative; left: 0.02vw;">
                     <div style="width: 300px; height: 204.20px; left: 2px; top: 108px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40.73px; display: inline-flex">
-                        <form action="/update-profile" method="post" enctype="multipart/form-data">
+                        <form action="/update_profile" method="POST" enctype="multipart/form-data">
                             <img class="profile-image" src="Milk Powder Gulab Jamun • Spoon Fork And Food.jpeg"  />
                             <div style="margin-top: 280px; text-align: left;">
                                 <label for="username" style="display: block; font-size: 22px; margin-bottom: 5px;">Username</label>
@@ -119,14 +119,14 @@
                                 <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
                             </div>
                             <div style="margin-top: 32px;">
-                                <button type="submit" style="background-color: #F8D24A; color: black; border: none; padding: 15px 30px; border-radius: 5px; cursor: pointer; font-size: 18px;">Update</button>
+                                <input type="submit" class ="submit" name="submit" id="submit" style="background-color: #F8D24A; color: black; border: none; padding: 15px 30px; border-radius: 5px; cursor: pointer; font-size: 18px;" value="Update">
                             </div>
                         </form>
                     </div>
                     <div style="width: 319px; height: 81px; left: 0px; top: 0px; position: absolute; text-align: center; color: black; font-size: 40px; font-family: Poppins; font-weight: 700; line-height: 29.60px; word-wrap: break-word">Update Profile</div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 
@@ -134,4 +134,71 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+    import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js";
+const firebaseConfig = {
+
+    apiKey: "AIzaSyDE9z868rmyfQUY1DBs5psW_77bj6nqrok",
+    authDomain: "food-with-love-de5c4.firebaseapp.com",
+    databaseURL: "https://food-with-love-de5c4-default-rtdb.firebaseio.com",
+    projectId: "food-with-love-de5c4",
+    storageBucket: "food-with-love-de5c4.appspot.com",
+    messagingSenderId: "307689000060",
+    appId: "1:307689000060:web:0b7e36a11a808030120df9"
+
+};
+
+// initialize firebase
+firebase.initializeApp(firebaseConfig);
+
+// reference your database
+var menu = firebase.database().ref("menu");
+
+document.getElementById("menu").addEventListener("submit", submitForm);
+
+function submitForm(e) {
+  e.preventDefault();
+
+  var dish1 = getElementVal("dish1");
+  var price1 = getElementVal("price1");
+  var dish2 = getElementVal("dish2");
+  var price2 = getElementVal("price2");
+  var dish3 = getElementVal("dish3");
+  var price3 = getElementVal("price3");
+  var dish4 = getElementVal("dish4");
+  var price4 = getElementVal("price4");
+  var dish5 = getElementVal("dish5");
+  var price5 = getElementVal("price5");
+
+
+  saveMessages(dish1, price1, dish2, price2, dish3, price3, dish4, price4, dish5, price5);
+
+  //   enable alert
+  alert('Menu updated')
+
+
+
+  //   reset the form
+  document.getElementById("menu").reset();
+}
+
+const saveMessages = (dish1, price1, dish2, price2, dish3, price3, dish4, price4, dish5, price5) => {
+  var newMenu = menu.push();
+
+  newMenu.set({
+    dish1: price1, 
+    dish2: price2, 
+    dish3: price3,
+    dish4: price4,
+    dish5: price5
+  });
+};
+
+const getElementVal = (id) => {
+  return document.getElementById(id).value;
+};
+</script>
+
+
 </html>
