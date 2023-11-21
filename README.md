@@ -18,6 +18,8 @@ Tech Stack:
 - Figma
 - Bootstrap
 - Firebase
+- Version-control: gitlab
+- Documentation tool: Sphinx
 
 Techincal Navigation:
 - home_page- SignUp or Login home_page
