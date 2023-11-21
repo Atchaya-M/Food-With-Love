@@ -18,14 +18,18 @@ Tech Stack:
 - Figma
 - Bootstrap
 - Firebase
+- Version-control: gitlab
+- Documentation tool: Sphinx
 
 Techincal Navigation:
 - home_page- SignUp or Login home_page
 - cust_signup, cook_signup2- Customer/ Seller SignUp
 - Customer and Seller Login home_page
 - kitchens_page- Main Kitchens Explore page
-- change_memu page (Seller)- Modifying Menu and Profile
+- change_menu page (Seller)- Modifying Menu and Profile
 - change_profile page (Buyer)- Modifying Profile and Preferences
+- display_menu page
+- cook_firstpage page
 
 References:
 - https://getbootstrap.com/docs/4.4/getting-started/introduction/ (Card, Flex, navbar, Carousal, Buttons, DropDowns, Forms)
