@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>display_menu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1d1c1c;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #navbar {
+            background-color: #F8D24A;
+            padding: 10px;
+            text-align: left;
+            font-weight: bold;
+            text-decoration: none;
+            width: 100%;
+            height: 40px;
+
+        }
+
+        #navbar a {
+            align-items: center;
+            color: #1d1c1c;
+            padding: 14px 16px;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        #navbar a:hover {
+            background-color: #efbc04;
+            color: black;
+        }
+
+        #root {
+            min-width: 500px;
+            margin: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #selectItemsHeader {
+            color: #1d1c1c;
+            background-color: #f8f8f8;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        .menu-item {
+            margin-bottom: 10px;
+            padding: 15px;
+            background-color: #f8f8f8;
+            color: #1d1c1c;
+            border-radius: 4px;
+            font-size: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .quantity {
+            width: 40px;
+            text-align: center;
+        }
+
+        #selectedItems {
+            max-width: 300px;
+            margin: 20px;
+            color: #f8f8f8;
+        }
+        #selectedItems button{
+          background-color: #F8D24A;
+          color: #1d1c1c;
+          font-size: large;
+          font-weight: bold;
+          align-items: center;
+          width: 200px;
+          height: 50px;
+        }
+
+        #selectedItemsList {
+            padding: 10px;
+        }
+
+        .selected-item {
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        #totalPrice {
+            font-size: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="kitchens_page.html">FoodWithLove</a>
+    </div>
+    <div id="root">
+        <!-- Your existing content here -->
+    </div>
+    <div id="selectedItems">
+        <h2>Selected Items</h2>
+        <div id="selectedItemsList"></div>
+        <p>Total Price: Rs.<span id="totalPrice">0.00</span></p>
+        <!-- "Order Now" button added -->
+        <button id="orderNowButton" onclick="orderNow()">Order Now</button>
+    </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+        import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDE9z868rmyfQUY1DBs5psW_77bj6nqrok",
+            authDomain: "food-with-love-de5c4.firebaseapp.com",
+            databaseURL: "https://food-with-love-de5c4-default-rtdb.firebaseio.com",
+            projectId: "food-with-love-de5c4",
+            storageBucket: "food-with-love-de5c4.appspot.com",
+            messagingSenderId: "307689000060",
+            appId: "1:307689000060:web:0b7e36a11a808030120df9",
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const firebaseRef = ref(database, "contactForm");
+
+        const rootElement = document.querySelector('#root');
+        const selectedItemsListElement = document.querySelector('#selectedItemsList');
+        const totalPriceElement = document.querySelector('#totalPrice');
+        let selectedItems = {};
+
+        onValue(firebaseRef, (snapshot) => {
+            rootElement.innerHTML = "";
+
+            snapshot.forEach((childSnapshot) => {
+                const data = childSnapshot.val();
+
+                for (let i = 1; i <= 4; i++) {
+                    const menuItemElement = document.createElement('div');
+                    menuItemElement.className = 'menu-item';
+
+                    const dishKey = `dish${i}`;
+                    const priceKey = `price${i}`;
+
+                    menuItemElement.innerHTML = `
+                        <div>${data[dishKey]} - Rs. ${data[priceKey]}</div>
+                        <div>
+                            <label for="quantity${i}">Quantity:</label>
+                            <input type="number" id="quantity${i}" name="quantity${i}" class="quantity" value="0" min="0" data-dish="${data[dishKey]}" data-price="${data[priceKey]}">
+                        </div>
+                    `;
+
+                    rootElement.appendChild(menuItemElement);
+                }
+            });
+
+            updateSelectedItems();
+        });
+
+        function updateSelectedItems() {
+            selectedItems = {};
+            selectedItemsListElement.innerHTML = "";
+            let total = 0;
+
+            const quantityInputs = document.querySelectorAll('.quantity');
+            quantityInputs.forEach((input) => {
+                const quantity = parseInt(input.value);
+                const dish = input.dataset.dish;
+                const price = parseFloat(input.dataset.price);
+
+                if (quantity > 0) {
+                    selectedItemsListElement.innerHTML += `<div class="selected-item">${dish} - Quantity: ${quantity}</div>`;
+                    selectedItems[dish] = quantity;
+                    total += price * quantity;
+                }
+            });
+
+            totalPriceElement.textContent = total.toFixed(2);
+        }
+
+        // "Order Now" button click event handler
+        function orderNow() {
+            // Add your logic for handling the order
+            alert("Order placed successfully!");
+        }
+
+        rootElement.addEventListener('input', () => {
+            updateSelectedItems();
+        });
+    </script>
+</body>
+
+</html>

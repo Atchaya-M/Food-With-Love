@@ -12,7 +12,7 @@
 </head>
 <style>
     body {
-        background-color: #f8f9fa;
+        background-color: #000;
         /* Set your desired background color */
         height: 100vh;
         /* Set a minimum height to cover the entire viewport */
@@ -98,6 +98,7 @@
         word-wrap: break-word;
     }
 
+
     .location-icon {
         height: 2em;
         margin-right: 5px;
@@ -161,10 +162,15 @@
         /* Maintain aspect ratio and cover the container */
     }
 
+    .col-mb-5 a{
+        color: #000;
+        text-decoration: none;
+    }
+
     /* Style to push all cards to the extreme right */
     .card-columns {
         /* Ensure maximum width */
-        margin-left: -250px;
+        margin-left: -450px;
         /* Push cards to the extreme right */
         margin-right: -340px;
         margin-top: 175px;
@@ -180,18 +186,18 @@
 
     .card-columns-3 {
         /* Ensure maximum width */
-        margin-left: -50px;
-        margin-right: -100px;
+        margin-left: 475px;
+        margin-right: -200px;
         /* Push cards to the extreme right */
         /* Remove default right margin */
     }
 
     /* Change location styling */
     .nav-item.change-location {
-        color: white;
-        font-size: 20px;
+        color: black;
+        font-size: 16px;
         font-family: 'Poppins', sans-serif;
-        font-weight: 700;
+        font-weight: 400;
         line-height: 23.40px;
         letter-spacing: 0.80px;
         word-wrap: break-word;
@@ -211,21 +217,23 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        What Next!
+                        What Next?
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="change_profile.html">Change Profile and Preferences</a>
-                        <a class="dropdown-item" href="home_trial-2.html">Logout</a>
+                        <a class="dropdown-item" href="welcome_page.html">Logout</a>
                     </div>
                 </li>
-                <li class="nav-item change location">
+                <li class="nav-item change-location">
                     <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                         <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                         <path
@@ -236,9 +244,8 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Content -->
-    <div style="width: 100vw; height: 100000000000px; position: absolute; background: rgb(0, 0, 0)"></div>
+        <!-- Content -->
+    <div style="width: 100vw; position: absolute; background: rgb(0, 0, 0)"></div>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -278,32 +285,30 @@
                     </div>
                 </div>        -->
         <div class="row">
-            <div class="col-md-6 ">
-                <div
-                    style="height: 1048px;width: 700px; padding-top: 57px; padding-bottom: 77.25px; padding-left: 37px; padding-right: 37px; right: 5vw; top: 100px; position: absolute; border-radius: 15.97px; border: 0.80px black solid; flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex; background-color: white;">
-                    <div style="width: 319px; height: 375.75px; position: relative; left: 0.02vw;">
-                        <div
-                            style="width: 600px; height: 204.20px; left: -100px; top: 108px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40.73px; display: inline-flex">
-                            <form>
+            <div class="col-md-6">
+                <div style="height: 1100px; width: 600px; padding: 57px 37px 77.25px 37px; right: 5vw; top: 100px; position: absolute; border-radius: 15.97px; border: 0.80px black solid; flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex; background-color: white;">
+                    <div style="width: 319px; height: 375.75px; position: relative; left: 0;">
+                        <div style="width: 600px; height: 204.20px; left: 0; top: 108px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40.73px; display: inline-flex;">
+                            <form action="" id="Rating">
                                 <div style="margin-top: 30px; text-align: left;">
-                                    <input type="radio" id="Foodie" name="Foodie" style="margin-right: 18px;">
-                                    <label for="Foodie" style="font-size: 24px; ">Foodie</label>
+                                    <input type="radio" id="Rating" name="Rating" style="margin-right: 18px;">
+                                    <label for="Rating" style="font-size: 24px; ">5</label>
                                 </div>
                                 <div style="margin-top: 30px; text-align: left;">
-                                    <input type="radio" id="Foodie" name="Foodie" style="margin-right: 18px;">
-                                    <label for="Foodie" style="font-size: 24px; ">Cook</label>
+                                    <input type="radio" id="Rating" name="Rating" style="margin-right: 18px;">
+                                    <label for="Rating" style="font-size: 24px; ">4</label>
                                 </div>
                                 <div style="margin-top: 30px; text-align: left;">
-                                    <input type="radio" id="Foodie" name="Foodie" style="margin-right: 18px;">
-                                    <label for="Foodie" style="font-size: 24px; ">Foodie</label>
+                                    <input type="radio" id="Rating" name="Rating" style="margin-right: 18px;">
+                                    <label for="Rating" style="font-size: 24px; ">3</label>
                                 </div>
                                 <div style="margin-top: 30px; text-align: left;">
-                                    <input type="radio" id="Foodie" name="Foodie" style="margin-right: 18px;">
-                                    <label for="Foodie" style="font-size: 24px; ">Cook</label>
+                                    <input type="radio" id="Rating" name="Rating" style="margin-right: 18px;">
+                                    <label for="Rating" style="font-size: 24px; ">2</label>
                                 </div>
                                 <div style="margin-top: 30px; text-align: left;">
-                                    <input type="radio" id="Foodie" name="Foodie" style="margin-right: 18px;">
-                                    <label for="Foodie" style="font-size: 24px; ">Foodie</label>
+                                    <input type="radio" id="Rating" name="Rating" style="margin-right: 18px;">
+                                    <label for="Rating" style="font-size: 24px; ">1</label>
                                 </div>
                                 <div style="margin-top: 30px; text-align: left;">
                                     <label for="Tell us what we can improve" style="font-size: 24px;">Tell us what we
@@ -325,67 +330,6 @@
                 </div>
 
             </div>
-            <div class="col-md-6">
-                <div style="width: 319px; height: 81px; left: 260px; top: 100px; position: absolute; text-align: center; color: rgb(250, 249, 249); font-size: 40px; font-family: Poppins; font-weight: 700; line-height: 29.60px; word-wrap: break-word">Top Homecooks</div>
-                <div
-                    class="row row-cols-1 row-cols-md-4 card-columns flex-row-reverse align-content-end align-self-end">
-                    <div class="col mb-4">
-                        <div class="card h-100">
-                            <img src="Moong Dal Chakli Recipe (Murukku).jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Madhumita</h5>
-                                <p class="card-text">Specialities: North Indian, South Indian, Chinese.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card h-100">
-                            <img src="Moong Dal Chakli Recipe (Murukku).jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">CJahnavi</h5>
-                                <p class="card-text">Specialities: Korean, Thai.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card h-100">
-                            <img src="Moong Dal Chakli Recipe (Murukku).jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card h-100">
-                            <img src="Moong Dal Chakli Recipe (Murukku).jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is not at all longer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col mb-4">
-                        <div class="card h-100">
-                            <img src="STEP BY STEP HOW TO MAKE HYDERABADI BRIYANI.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a short card.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card h-100">
-                            <img src="Kuzhi Paniyaram.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- <div class="restaurant-section">
@@ -406,59 +350,60 @@
    </div>
 -->
     <div class="container mt-4 align-self-center">
-        <div class="row row-cols-1 row-cols-md-4 card-columns-3 flex-row-reverse align-content-end align-self-end">
-            <div class="col mb-5">
+        <div class="row row-cols-1 row-cols-md-3 card-columns-3 flex-row-reverse align-content-end align-self-end">
+            <div class="col-mb-5">
                 <div class="card-hover-more h-100">
-                    <img src="Moong Dal Chakli Recipe (Murukku).jpeg" class="card-img-top" alt="...">
+                    <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c291dGglMjBpbmRpYW4lMjBmb29kfGVufDB8fDB8fHww" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Madhumita</h5>
+                        <h5 class="card-title">Atchaya</h5>
                         <p class="card-text">Specialities: North Indian, South Indian, Chinese.</p>
                     </div>
                 </div>
             </div>
-            <div class="col mb-5">
+            <div class="col-mb-5">
                 <div class="card-hover-more h-100">
-                    <img src="Moong Dal Chakli Recipe (Murukku).jpeg" class="card-img-top" alt="...">
+                    <img src="https://images.unsplash.com/photo-1580651315530-69c8e0026377?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">CJahnavi</h5>
+                        <h5 class="card-title">Snigdha</h5>
                         <p class="card-text">Specialities: Korean, Thai.</p>
                     </div>
                 </div>
             </div>
-            <div class="col mb-5">
+            <div class="col-mb-5"><a href="display_menu.html">
                 <div class="card-hover-more h-100">
-                    <img src="Moong Dal Chakli Recipe (Murukku).jpeg" class="card-img-top" alt="...">
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with </p>
+                        <h5 class="card-title">Anamitra</h5>
+                        <p class="card-text">Specialities: North Indian, Italian, Desserts </p>
                     </div>
                 </div>
+            </a>
             </div>
-            <div class="col mb-5">
+            <div class="col-mb-5">
                 <div class="card-hover-more h-100">
                     <img src="Moong Dal Chakli Recipe (Murukku).jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is not at all longer</p>
+                        <h5 class="card-title">Jahnvi</h5>
+                        <p class="card-text">Specialities: South Indian, Italian, Breakfast</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col mb-5">
+            <div class="col-mb-5">
                 <div class="card-hover-more h-100">
                     <img src="STEP BY STEP HOW TO MAKE HYDERABADI BRIYANI.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
+                        <h5 class="card-title">Madhumita</h5>
+                        <p class="card-text">Specialities: Gujarati, Continental, North Indian</p>
                     </div>
                 </div>
             </div>
-            <div class="col mb-5">
+            <div class="col-mb-5">
                 <div class="card-hover-more h-100">
                     <img src="Kuzhi Paniyaram.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with.</p>
+                        <h5 class="card-title">Diya</h5>
+                        <p class="card-text">Specialities: Thai, South Indian, Chinese</p>
                     </div>
                 </div>
             </div>
@@ -474,6 +419,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="./mail.js"></script>
+
 </body>
 
 </html>
